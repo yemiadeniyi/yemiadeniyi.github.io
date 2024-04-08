@@ -317,8 +317,8 @@ main {
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
-  overflow: visible;
-  /*transition: var(--transition-2);*/
+  overflow: hidden;
+  transition: var(--transition-2);
 }
 
 .sidebar.active { max-height: 405px; }
@@ -387,9 +387,9 @@ main {
 .info_more-btn span { display: none; }
 
 .sidebar-info_more {
-  opacity: 1;
-  visibility: visible;
-  /*transition: var(--transition-2);*/
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
 }
 
 .sidebar.active .sidebar-info_more {
