@@ -88,7 +88,7 @@
         <div class="contact-info">
           <p class="contact-title">Phone</p>
 
-          <a href="tel:+447951861578" class="contact-link">+44 795 186 1578</a>
+          <a href="tel:+447951861578" class="contact-link">+44 795 1861578</a>
         </div>
 
       </li>
@@ -709,7 +709,7 @@
 
 
      <!--
-  - #PORTFOLIO
+- #PORTFOLIO
 -->
 
 <article class="portfolio" data-page="portfolio">
@@ -746,7 +746,7 @@
 
       <!-- Finance -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -759,7 +759,7 @@
 
       <!-- Orizon -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -772,7 +772,7 @@
 
       <!-- Fundo -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -785,7 +785,7 @@
 
       <!-- Brawlhalla -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -798,7 +798,7 @@
 
       <!-- DSM. -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -811,7 +811,7 @@
 
       <!-- MetaSpark -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -824,7 +824,7 @@
 
       <!-- Summary -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -837,7 +837,7 @@
 
       <!-- Task Manager -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -850,7 +850,7 @@
 
       <!-- Arrival -->
       <li class="project-item active" data-filter-item>
-        <a href="#" class="project-popup" data-testimonial-popup>
+        <a href="#" class="project-popup" data-popup="project">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
@@ -867,55 +867,37 @@
 
 </article>
 
+<!-- Project Popup Modal -->
 <div class="modal-container" data-modal-container>
+
   <div class="overlay" data-overlay></div>
-  <section class="testimonials-modal">
+
+  <section class="project-modal">
+
     <button class="modal-close-btn" data-modal-close-btn>
       <ion-icon name="close-outline"></ion-icon>
     </button>
+
     <div class="modal-img-wrapper">
-      <figure class="modal-avatar-box">
-        <img src="./assets/images/avatar-1.png" alt="Testimonial Avatar" width="80" data-modal-img>
+      <figure class="modal-project-img">
+        <img src="" alt="" data-modal-img>
       </figure>
-      <img src="./assets/images/icon-quote.svg" alt="quote icon">
     </div>
+
     <div class="modal-content">
-      <h4 class="h3 modal-title" data-modal-title>Testimonial Title</h4>
-      <time datetime="2021-01-01" data-modal-date>1 January, 2021</time>
+
+      <h4 class="h3 modal-title" data-modal-title></h4>
+
       <div data-modal-text>
-        <p>This is a generic testimonial. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p></p>
       </div>
+
     </div>
+
   </section>
+
 </div>
 
-<script>
-  const testimonialPopups = document.querySelectorAll('[data-testimonial-popup]');
-
-  testimonialPopups.forEach(popup => {
-    popup.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      const modalTitle = document.querySelector('[data-modal-title]');
-      const modalDate = document.querySelector('[data-modal-date]');
-      const modalText = document.querySelector('[data-modal-text]');
-
-      modalTitle.textContent = "Testimonial Title";
-      modalDate.setAttribute('datetime', "2021-01-01");
-      modalDate.textContent = "1 January, 2021";
-      modalText.innerHTML = `<p>This is a generic testimonial. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`;
-
-      const modalContainer = document.querySelector('[data-modal-container]');
-      modalContainer.classList.add('active');
-    });
-  });
-
-  const closeModal = document.querySelector('[data-modal-close-btn]');
-  closeModal.addEventListener('click', function() {
-    const modalContainer = document.querySelector('[data-modal-container]');
-    modalContainer.classList.remove('active');
-  });
-</script>
 
 
       <!--
