@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const popupTexts = {
   "Football": `
     <h2>Football Portfolio</h2>
-    <br><b> Click on the Image Below for more information</></b><br><br>
+    <br><b> Click on the Image Below for more information</b><br><br>
     <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
       <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
@@ -559,7 +559,80 @@ const popupTexts = {
 
 
 
-  "CarSales": "<h2>PREDICTING CAR PRICE.</h2><p>Praesent ac metus consectetur, tempus enim eget, varius felis. Integer laoreet, risus at pharetra vehicula, mi lectus lacinia ligula.</p>",
+  "CarSales": `
+  <h2>Data Science/Machine Learning Portfolio – Predicting Car price.</h2>
+  <br>
+  
+  This project aim to utilize Machine Learning models to predict the price of a customer’s car once it is listed on the website. The objective is to determine whether the price is overpriced, underpriced, or aligned with the current market price of the car. The model was deployed and the weblink can be access via<a href="https://vehiclepriceprediction.streamlit.app/" target="_blank">WEBLINK
+  </a>
+  <br><br>
+  <h2> Exploratory Data Analysis </h2> <br>
+
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+   
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <h3>Outlier Removal</h3><br>
+  <p>
+  The was done by setting up maximum threshold and taking the subset that are less than the maximum. both mileage and price has outlier, This figures were confirmed by the company.</p>
+  <br>
+  
+  <code>
+  max_threshold  = autotrader['mileage'].quantile(0.99)
+  autotrader = autotrader[autotrader['mileage'] < max_threshold]
+  autotrader[autotrader['mileage']>140000.0]
+
+  </code> <br>
+   
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <h3>Feature Engineering and Feature Selection.</h3><br>
+  <p>
+  The first feature that was engineered was vehicle age, which was achieved by subtract-ing the year of registration from the current year. A current year column was also created using the datetime.now() module. <br>Secondly, a column called average mileage was created by using a journal published on-line titled Used Car Mileage Vs Age – Which Matters More?, According to government statistics, the average number of miles driven by cars in England each year was 7,400 miles in 2019. <br><br>
+  Therefore, each vehicle’s average mileage was calculated by multiplying its age with 7,400. Lastly, the mileage was categorized into four groups. If the original mileage is between 0 and half of the average mileage, the vehicle is classified as having low mileage. If the mileage is less than or greater than half of the average mileage, it is classified as having good mileage. If the mileage is 15,000 or more than the average mileage, it is classified as having high mileage. Otherwise, it is classified as having very high mileage.</p>
+  <br>
+
+  <p>
+  The goal is to reduce the dimensionality of the input space while retaining as much of the original information as possible. Before selectiong the features, There are some features that are naturally not relevant for the model, I will drop those once before I do automatic feature selection. There are several method for feature selection like SelectKbest, Recursive Feature Elimination (RFE) and many more but I decided to use SelectKbest.</p>
+  <br>
+
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+
+  <h3>Model Evaluation and Explanation.</h3><br>
+  <p>
+  I decided to obtain predictions of y using the best model, which is gradient boosting. I also calculated the difference between the true price and the predicted price, took the absolute value, and found the mean of the differences. Additionally, I plotted a graph of predicted price against true price, as seen in the plot below:
+  </p>
+  <br>
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <h3>Global and Local Explanations with SHAP</h3><br>
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+  <p>
+  The sharp summary plot combines feature importance with feature effects. Each point on the summary plot is a Shapley value of an instance per feature. The position on the y-axis is determined by the feature and on the x-axis by the Shapley value of each instance. The combined feature standard model and standard make are the most important feature as they have a high Shapley value. The color represents the value of the feature from low to high. Overlapping points are jittered in the y-axis direction, so we get a sense of the distribution of the Shapley values per feature. The features are ordered according to their importance which mean standard model is the most important feature. It can also be deduce that vehicle age and mileage affects the price both negatively and positively.
+  </p><br><br>
+
+  <h3>Partial Dependency Plots.</h3><br>
+  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+  <p>
+  From above plot, the left plot shows the relationship between mileage and vehicle price. It indicates that an increase in mileage leads to a decrease in vehicle price. Similarly, the middle plot reveals that vehicle age also has a negative correlation with price. The higher the mileage and the age of the vehicle, the lower the price. This trend is further confirmed in the interaction plot that depicts vehicle age and mileage against price. The initial price was at 23701, but as both the age of the vehicle and mileage increase, the price decreases significantly, eventually reaching 6878.
+  </p>
+`,
 
 
   
