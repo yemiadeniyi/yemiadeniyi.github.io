@@ -159,5 +159,94 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
+//added line
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Testimonials modal popup
+  const modalBtns = document.querySelectorAll('[data-testimonials-item]');
+  const modalCloseBtn = document.querySelector('[data-modal-close-btn]');
+  const modalContainer = document.querySelector('[data-modal-container]');
+  
+  modalBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+          const avatar = btn.querySelector('[data-testimonials-avatar]').getAttribute('src');
+          const name = btn.querySelector('[data-testimonials-title]').textContent;
+          const text = btn.querySelector('[data-testimonials-text]').textContent;
+
+          document.querySelector('[data-modal-img]').setAttribute('src', avatar);
+          document.querySelector('[data-modal-title]').textContent = name;
+          document.querySelector('[data-modal-text] p').textContent = text;
+
+          modalContainer.classList.add('active');
+      });
+  });
+
+  modalCloseBtn.addEventListener('click', () => {
+      modalContainer.classList.remove('active');
+  });
+
+  // Portfolio modal popup
+  const portfolioModalBtns = document.querySelectorAll('[data-portfolio-item]');
+  const portfolioModalCloseBtn = document.querySelector('[data-portfolio-modal] .modal-close-btn');
+  const portfolioModalContainer = document.querySelector('[data-portfolio-modal]');
+
+  portfolioModalBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const image = btn.getAttribute('data-image');
+          const title = btn.getAttribute('data-title');
+
+          portfolioModalContainer.querySelector('.popup-image').setAttribute('src', image);
+          portfolioModalContainer.querySelector('.project-title').textContent = title;
+
+          portfolioModalContainer.classList.add('active');
+      });
+  });
+
+  portfolioModalCloseBtn.addEventListener('click', () => {
+      portfolioModalContainer.classList.remove('active');
+  });
+});
 
 
+
+
+//show different sample project 
+
+// Sample popup texts
+const popupTexts = {
+  "Football": "<h2>Football Portfolio</h2><img src=\"/assets/images/project-1.jpg\" alt=\"Football Project\" style=\"max-width: 100%; height: auto;\"><p>jdndndndnjd</p>",
+ 
+  "PowerBI": "<h2>PowerBI Performance Portfolio</h2><p>Sed nec mi vel purus sollicitudin dapibus. Nunc congue fermentum nunc, id fringilla orci egestas ut. In hac habitasse platea dictumst.</p>",
+  "Sales": "<h2>Sales Management Portfolio</h2><p>Curabitur auctor euismod purus, ac tincidunt ante eleifend non. Fusce id ipsum id arcu finibus lacinia.</p>",
+  "CarSales": "<h2>PREDICTING CAR PRICE.</h2><p>Praesent ac metus consectetur, tempus enim eget, varius felis. Integer laoreet, risus at pharetra vehicula, mi lectus lacinia ligula.</p>",
+ "Task Manager": "<h2>Upcoming Project</h2><p>Fusce congue enim id semper volutpat. Sed ultrices, turpis sed vehicula tincidunt, lorem libero congue neque.</p>",
+  };
+
+const viewProjectLinks = document.querySelectorAll('.view-project');
+
+viewProjectLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const title = this.getAttribute('data-title');
+      const modal = document.querySelector('.project-modal');
+      const popupImage = modal.querySelector('.popup-image');
+      const projectTitle = modal.querySelector('.project-title');
+      const popupContent = modal.querySelector('.popup-text');
+
+      popupImage.src = this.getAttribute('data-image');
+      projectTitle.textContent = title;
+      popupContent.innerHTML = popupTexts[title];
+      
+      modal.classList.add('active');
+  });
+});
+
+// Close modal
+const closeModalBtn = document.querySelector('[data-modal-close-btn]');
+closeModalBtn.addEventListener('click', function() {
+  const modal = document.querySelector('.project-modal');
+  modal.classList.remove('active');
+});

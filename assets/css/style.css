@@ -1880,3 +1880,47 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+/* addded */
+
+.show-modal {
+  display: block;
+}
+
+/* New CSS for Portfolio Modal */
+.project-modal .modal-close-btn {
+  color: #000;
+  z-index: 2;
+}
+
+.project-modal .testimonials-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-modal .modal-img-wrapper {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-height: 70vh; /* Adjusted to 70vh for better proportion */
+  overflow: hidden;
+}
+
+.project-modal .popup-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.project-modal .content-card {
+    margin-top: 20px;
+    width: 100%;
+    overflow-y: auto;
+    color: white; /* Text color set to white */
+}
