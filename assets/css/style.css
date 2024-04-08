@@ -1891,7 +1891,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* New CSS for Portfolio Modal */
 .project-modal .modal-close-btn {
-  color: #000;
+  color: #ffffff;
   z-index: 2;
 }
 
