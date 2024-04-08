@@ -169,11 +169,11 @@ document.addEventListener('DOMContentLoaded', () => {
   
   modalBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-          const avatar = btn.querySelector('[data-testimonials-avatar]').getAttribute('src');
+          //const avatar = btn.querySelector('[data-testimonials-avatar]').getAttribute('src');
           const name = btn.querySelector('[data-testimonials-title]').textContent;
           const text = btn.querySelector('[data-testimonials-text]').textContent;
 
-          document.querySelector('[data-modal-img]').setAttribute('src', avatar);
+          //document.querySelector('[data-modal-img]').setAttribute('src', avatar);
           document.querySelector('[data-modal-title]').textContent = name;
           document.querySelector('[data-modal-text] p').textContent = text;
 
@@ -194,10 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
           e.preventDefault();
 
-          const image = btn.getAttribute('data-image');
+          //const image = btn.getAttribute('data-image');
           const title = btn.getAttribute('data-title');
 
-          portfolioModalContainer.querySelector('.popup-image').setAttribute('src', image);
+          //portfolioModalContainer.querySelector('.popup-image').setAttribute('src', image);
           portfolioModalContainer.querySelector('.project-title').textContent = title;
 
           portfolioModalContainer.classList.add('active');
@@ -216,7 +216,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Sample popup texts
 const popupTexts = {
-  "Football": "<h2>Football Portfolio</h2><img src=\"/assets/images/project-1.jpg\" alt=\"Football Project\" style=\"max-width: 100%; height: auto;\"><p>jdndndndnjd</p>",
+  "Football": `
+    <h2>Football Portfolio</h2>
+    <br><b> Click on the Image Below for more information</></b><br><br>
+    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
+      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    </a><br><br>
+    <p>The primary objective was to streamline the identification of players perfectly aligned with distinct positions on the field.<br><br>
+    Recognizing that scouts and coaches employ a diverse set of metrics tailored to each role, I meticulously selected four key metrics for each of the nine positions, although the metrics can be increased as per the scout or coach instruction.<br><br>
+    The resulting dashboard offers an interactive experience where users can effortlessly toggle between player positions. Each selection unveils the chosen metrics, providing a comprehensive view of a player’s prowess. A simple toggle on any player displays some of the player information.<br><br>
+    The dashboard doesn’t stop there. It goes beyond the confines of individual players to offer insights into broader trends. Users can explore the number of games played by a player in their respective league, understand the impact of age on performance, and even conduct specific player searches to evaluate their across-the-board metrics.</p>
+  `,
  
   "PowerBI": "<h2>PowerBI Performance Portfolio</h2><p>Sed nec mi vel purus sollicitudin dapibus. Nunc congue fermentum nunc, id fringilla orci egestas ut. In hac habitasse platea dictumst.</p>",
   "Sales": "<h2>Sales Management Portfolio</h2><p>Curabitur auctor euismod purus, ac tincidunt ante eleifend non. Fusce id ipsum id arcu finibus lacinia.</p>",
@@ -232,11 +242,11 @@ viewProjectLinks.forEach(link => {
 
       const title = this.getAttribute('data-title');
       const modal = document.querySelector('.project-modal');
-      const popupImage = modal.querySelector('.popup-image');
+      //const popupImage = modal.querySelector('.popup-image');
       const projectTitle = modal.querySelector('.project-title');
       const popupContent = modal.querySelector('.popup-text');
 
-      popupImage.src = this.getAttribute('data-image');
+      //popupImage.src = this.getAttribute('data-image');
       projectTitle.textContent = title;
       popupContent.innerHTML = popupTexts[title];
       
