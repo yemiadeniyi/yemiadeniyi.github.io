@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Sample popup texts
 const popupTexts = {
   "Football": `
-    <h2>Football Portfolio</h2>
+    <h2>Football Scout Insigt: Uncovering Player Performance with Distinct Position Using Tableau</h2>
     <br><b> Click on the Image Below for more information</b><br><br>
     <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
       <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
@@ -227,18 +227,22 @@ const popupTexts = {
     The resulting dashboard offers an interactive experience where users can effortlessly toggle between player positions. Each selection unveils the chosen metrics, providing a comprehensive view of a player’s prowess. A simple toggle on any player displays some of the player information.<br><br>
     The dashboard doesn’t stop there. It goes beyond the confines of individual players to offer insights into broader trends. Users can explore the number of games played by a player in their respective league, understand the impact of age on performance, and even conduct specific player searches to evaluate their across-the-board metrics.</p>
   `,
+
+
   "PowerBI": `
-  <h2>PowerBI Performance Portfolio</h2><br><br>
+  <h2>Sales Analytics: Unveiling insights for Strategic Sales Optimization Using PowerBI</h2><br><br>
   <h3><b>Click Below Images to have a feel of the dashboard</b></h3>
 
   <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc5ODY1YzktZjg3Ni00Mzg4LTgzMjAtNDRlMzM4YWNkZjBlIiwidCI6ImQ0OWFmZjZmLTEzNDktNDJlYy04NDkzLTIxMzYyYTNlMDdlZiJ9" target="_blank">
+      <img src="/assets/images/tab2.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/tab2.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br>
+
+    
 
   <br>
   <h3><b>Business Request</b></h3><br>
@@ -371,38 +375,38 @@ const popupTexts = {
   <br> 
   <br>
   <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/a.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/b.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/c.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/d.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/e.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/f.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
     <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="#" target="_blank">
+      <img src="/assets/images/ii.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 
 
@@ -412,17 +416,27 @@ const popupTexts = {
   <br>
   <p><b>Click the picture below to see it in action</b></p>
   <br>
-    <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiNzc5ODY1YzktZjg3Ni00Mzg4LTgzMjAtNDRlMzM4YWNkZjBlIiwidCI6ImQ0OWFmZjZmLTEzNDktNDJlYy04NDkzLTIxMzYyYTNlMDdlZiJ9" target="_blank">
+      <img src="/assets/images/h.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br><br>
 `,
 
-"Sales": `
-  <h2>SQL/Power BI – Sales Management Portfolio</h2>
-  <br><b>Hi, This is showing some screenshots from the project, Final Power Bi dashboard, data model and Budget data</b><br><br>
 
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+
+"Sales": `
+<h2>Uncovering Profit Margin and other metrics: A descriptive Analytics using SQL and PowerBI</h2>
+  <br><b>This is showing some screenshots from the project, Final Power Bi dashboard, data model and Budget data</b><br><br>
+
+  <a href="#" target="_blank">
+    <img src="/assets/images/hh.png" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <a href="#" target="_blank">
+    <img src="/assets/images/jj.png" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <a href="#" target="_blank">
+    <img src="/assets/images/kk.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
   <h3>Business Request and User Story</h3>
@@ -542,8 +556,8 @@ const popupTexts = {
 
   <h3>Data Model</h3>
   <p>Here is a screenshot of the data model after loading cleansed and prepared tables into Power BI. The data model also illustrates how FACT_Budget has been connected to the relevant DIM tables.</p> <br>
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+      <img src="/assets/images/vv.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br>
 
   <br>
@@ -552,15 +566,15 @@ const popupTexts = {
   <br>
   <p> Click on the picture below to see it in action </p> <br>
 
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-      <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="https://app.powerbi.com/view?r=eyJrIjoiYzM4OTU5NDktMzExOS00ZDhkLTk1MjItZWU3MWRlNWQ0NzMwIiwidCI6ImQ0OWFmZjZmLTEzNDktNDJlYy04NDkzLTIxMzYyYTNlMDdlZiJ9" target="_blank">
+      <img src="/assets/images/bn.png" alt="Football Project" style="max-width: 100%; height: auto;">
     </a><br>
 `,
 
 
 
   "CarSales": `
-  <h2>Data Science/Machine Learning Portfolio – Predicting Car price.</h2>
+  <h2>Prediction of Car Price Using Real Life Dataset: Autotrader data project using Machine Learning</h2>
   <br>
   
   This project aim to utilize Machine Learning models to predict the price of a customer’s car once it is listed on the website. The objective is to determine whether the price is overpriced, underpriced, or aligned with the current market price of the car. The model was deployed and the weblink can be access via<a href="https://vehiclepriceprediction.streamlit.app/" target="_blank">WEBLINK
@@ -568,13 +582,17 @@ const popupTexts = {
   <br><br>
   <h2> Exploratory Data Analysis </h2> <br>
 
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+    <img src="/assets/images/price.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
    
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+    <img src="/assets/images/mil.png" alt="Football Project" style="max-width: 100%; height: auto;">
+  </a><br><br>
+
+  <a href="#" target="_blank">
+    <img src="/assets/images/body.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
   <h3>Outlier Removal</h3><br>
@@ -589,8 +607,8 @@ const popupTexts = {
 
   </code> <br>
    
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+    <img src="/assets/images/mileage.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
   <h3>Feature Engineering and Feature Selection.</h3><br>
@@ -603,8 +621,8 @@ const popupTexts = {
   The goal is to reduce the dimensionality of the input space while retaining as much of the original information as possible. Before selectiong the features, There are some features that are naturally not relevant for the model, I will drop those once before I do automatic feature selection. There are several method for feature selection like SelectKbest, Recursive Feature Elimination (RFE) and many more but I decided to use SelectKbest.</p>
   <br>
 
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-    <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+    <img src="/assets/images/kbest.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
 
@@ -613,21 +631,21 @@ const popupTexts = {
   I decided to obtain predictions of y using the best model, which is gradient boosting. I also calculated the difference between the true price and the predicted price, took the absolute value, and found the mean of the differences. Additionally, I plotted a graph of predicted price against true price, as seen in the plot below:
   </p>
   <br>
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+  <img src="/assets/images/am.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
 
   <h3>Global and Local Explanations with SHAP</h3><br>
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+  <img src="/assets/images/sharp.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
   <p>
   The sharp summary plot combines feature importance with feature effects. Each point on the summary plot is a Shapley value of an instance per feature. The position on the y-axis is determined by the feature and on the x-axis by the Shapley value of each instance. The combined feature standard model and standard make are the most important feature as they have a high Shapley value. The color represents the value of the feature from low to high. Overlapping points are jittered in the y-axis direction, so we get a sense of the distribution of the Shapley values per feature. The features are ordered according to their importance which mean standard model is the most important feature. It can also be deduce that vehicle age and mileage affects the price both negatively and positively.
   </p><br><br>
 
   <h3>Partial Dependency Plots.</h3><br>
-  <a href="https://public.tableau.com/app/profile/opeyemi.adeniyi/viz/Top5LeaguePlayerScoutingDashboard/Dashboard1?publish=yes" target="_blank">
-  <img src="/assets/images/project-1.jpg" alt="Football Project" style="max-width: 100%; height: auto;">
+  <a href="#" target="_blank">
+  <img src="/assets/images/pdp.png" alt="Football Project" style="max-width: 100%; height: auto;">
   </a><br><br>
   <p>
   From above plot, the left plot shows the relationship between mileage and vehicle price. It indicates that an increase in mileage leads to a decrease in vehicle price. Similarly, the middle plot reveals that vehicle age also has a negative correlation with price. The higher the mileage and the age of the vehicle, the lower the price. This trend is further confirmed in the interaction plot that depicts vehicle age and mileage against price. The initial price was at 23701, but as both the age of the vehicle and mileage increase, the price decreases significantly, eventually reaching 6878.
@@ -636,7 +654,7 @@ const popupTexts = {
 
 
   
- "Task Manager": "<h2>Upcoming Project</h2><p>Fusce congue enim id semper volutpat. Sed ultrices, turpis sed vehicula tincidunt, lorem libero congue neque.</p>",
+ "Task Manager": "<h2>Upcoming Project</h2><p>This portfolio will be updated once this project is completed. </p>",
   };
 
 const viewProjectLinks = document.querySelectorAll('.view-project');
